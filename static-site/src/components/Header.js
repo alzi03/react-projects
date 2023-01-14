@@ -6,7 +6,10 @@ const Header = () => {
   return (
     <header>
       <nav className="header">
-        <img src={logo} width="80px" />
+        <div className="logo">
+          <img src={logo} width="40px" height="auto" />
+          React Facts
+        </div>
         <ul className="nav-items">
           <li>Home</li>
           <li>About</li>

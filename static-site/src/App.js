@@ -3,7 +3,7 @@ import Header from "./components/Header";
 import Footer from "./components/Footer";
 import Content from "./components/Content";
 
-const Page = () => {
+const App = () => {
   return (
     <div>
       <Header />
@@ -13,4 +13,4 @@ const Page = () => {
   );
 };
 
-export default Page;
+export default App;
