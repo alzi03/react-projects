@@ -1,3 +1,5 @@
+My Digital Business Card, made with React as evidently noted below
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
