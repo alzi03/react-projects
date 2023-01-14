@@ -1,8 +1,27 @@
-const body = ReactDOM.createRoot(document.querySelector('#body'))
+/* import Header from "Header"
+console.log(Header)
+*/
+
+
+const Header = () => {
+    return (
+    <header>
+        <nav className="header">
+            <img src="./assets/react-logo.svg" width="80px"/>
+            <ul className="nav-items">
+                <li>Home</li>
+                <li>About</li>
+                <li>Contact</li>
+            </ul>
+        </nav>
+    </header>
+
+)}
+
 
 const Footer = () => {
     return(
-    <footer>
+    <footer className="footer">
         <small>2023 alzi03 | All Rights Reserved.</small>
     </footer>
 )}
@@ -20,20 +39,6 @@ const Content = () => {
     )
 }
 
-const Header = () => {
-    return (
-    <header>
-        <nav className="header">
-            <img src="./assets/react-logo.svg" className="img"/>
-            <ul className="nav-items">
-                <li>Home</li>
-                <li>About</li>
-                <li>Contact</li>
-            </ul>
-        </nav>
-    </header>
-
-)}
 const Page = () =>{
     return (
         <div>
@@ -43,6 +48,10 @@ const Page = () =>{
         </div>
     )
 }
+
+
+
+const body = ReactDOM.createRoot(document.querySelector('#body'))
 body.render(
     <Page />
 )

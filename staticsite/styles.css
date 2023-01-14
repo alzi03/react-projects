@@ -9,12 +9,20 @@ body{
     justify-content:space-between;
 }
 .nav-items{
-    margin-right:2vh;
     list-style:none;
     display:flex;
     gap:30px;
 }
 
-.img{
-    width:80px;
+
+.footer{
+    display:flex;
+    background-color:beige;
+    font-weight:550;
+    justify-content:center;
+    position:absolute ;
+    bottom:0;
+    left:0;
+    padding:30px;
+    right:0;
 }
