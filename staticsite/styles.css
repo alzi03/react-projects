@@ -2,5 +2,19 @@ body{
     font-family:'Roboto', sans-serif;
     padding:0;
     border:0;
+}
 
+.header{
+    display:flex;
+    justify-content:space-between;
+}
+.nav-items{
+    margin-right:2vh;
+    list-style:none;
+    display:flex;
+    gap:30px;
+}
+
+.img{
+    width:80px;
 }
