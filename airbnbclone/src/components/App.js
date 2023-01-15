@@ -1,8 +1,10 @@
-import logo from './logo.svg';
 import './App.css';
+import Top from './Top'
 
 function App() {
-  return
+  return(
+    <Top />
+  )
 }
 
 export default App;
