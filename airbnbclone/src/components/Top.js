@@ -11,6 +11,7 @@ const Top = () => {
       <div className="header">
         <img src={airbnb} width="200px"/>
       </div>
+      {/*
       <div className="images">
         <div className="image">
           <img src={topimage1} className="topimage"/>
@@ -24,9 +25,11 @@ const Top = () => {
           <img src={topimage3} className="topimage"/>
           <h3>Luxury living</h3>
         </div>
+      
       </div>
+  */}
     </div>
   )
 }
 
-export default Top
+export default Top;
