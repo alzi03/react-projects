@@ -9,15 +9,16 @@ import image2 from "../assets/image2.png"
 function Card(props) {
   return(
     <div className="card">
+      {props.openSeats==0 ? <div className="badge">SOLD OUT</div> : <div className="badge">AVAILABLE</div>}
       <img src={props.image} width="300px"/>
       <div className="rating">
-        <img src={star} width="20px"/>{props.rating} {props.reviews && <span>({props.reviews})</span>}<small>{props.country}</small>
+        <img src={star} width="20px"/>{props.rating} {props.reviews && <span>({props.reviews})</span>}<small>{props.location}</small>
       </div>
       <div className="description">
         {props.description}
       </div>
       <div>
-        <p><span className="price">From {props.price}</span> / person</p>
+        <p><span className="price">From ${props.price}</span> / person</p>
       </div>
     </div>
   )
@@ -26,33 +27,42 @@ function Card(props) {
 
 const cardsInfo = [
   {
+    openSeats:0,
     image:image1,
     rating:"5.0",
     reviews:"6",
-    country:"USA",
+    location:"USA",
     description:"Swimming Lessons",
-    price:"$136"
+    price:136
   },
   {
+    openSeats:52,
     image:image2,
     rating:"4.9",
     reviews:"12",
-    country:"Guatemala",
+    location:"ONLINE",
     description:"Unforgettable Memories",
-    price:"$250"
-  },
-  {
+    price:250,
+  }
+  /*
     rating:"4.9",
     description:"Unforgettable Memories",
     price:"$250"
-  }
+*/
 ]
 
 function Cards() {
-  console.log(image1)
   const cards = cardsInfo.map(card => {
-    return <Card image={card.image} rating={card.rating} reviews={card.reviews} country={card.country} description={card.description} price={card.price}/>
-  })
+    return( 
+    <Card 
+      openSeats={card.openSeats} 
+      image={card.image} 
+      rating={card.rating} 
+      reviews={card.reviews} 
+      location={card.location} 
+      description={card.description} 
+      price={card.price}/>
+  )})
   return(
     <div className="cards">
       {cards}
