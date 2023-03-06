@@ -56,7 +56,7 @@ main{
 }
 
 .image{
-  position:relative;
+  position:relative; 
   border-radius:10px;
 }
 

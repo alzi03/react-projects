@@ -25,12 +25,6 @@ const Meme = () => {
     })
   }
   
-
-
-
-
-
-
   return (
     <main>
       <form className="form">
